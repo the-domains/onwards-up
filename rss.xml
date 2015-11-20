@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Onwards Up - digital product consultants]]></title>
+        <description><![CDATA[Onwards Up - digital product consultants]]></description>
+        <link>http://github.com/dylang/node-rss</link>
+        <generator>The Grid</generator>
+        <lastBuildDate>Fri, 20 Nov 2015 05:59:37 GMT</lastBuildDate>
+        <atom:link href="undefinedrss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Forget what you want. Be the Product Manager your team needs.]]></title>
+            <description><![CDATA[<article><h1>Forget what you want. Be the Product Manager your team needs.</h1><p>Company to company, you will find different definitions of Product Management. And if you're in a big company, organizations within will have a differing responsibilities for the role. But it's up to you, once you arrive within your product team, to be the Product Manager they need.</p><img src="https://cdn-images-1.medium.com/max/800/1*oBgj1FMn9GrUBIxPh_k2HQ.jpeg"></article>]]></description>
+            <link>https://medium.com/@anzuwin/forget-what-you-want-be-the-product-manager-your-team-needs-4b49ae837e52#.ld36tc55y</link>
+            <guid isPermaLink="false">d026db9d-200e-43f2-8cfa-999bbebadf70</guid>
+            <pubDate>Fri, 20 Nov 2015 05:59:26 GMT</pubDate>
+        </item>
+    </channel>
+</rss>
