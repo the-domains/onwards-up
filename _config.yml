@@ -1,6 +1,6 @@
 name: Onwards Up
 favicon: null
-layout_spectrum: 0.6043841254431754
+layout_spectrum: 0.26428
 typography_spectrum: 0.5351598868146539
 title: Onwards Up - digital product consultants
 cta:
@@ -22,8 +22,8 @@ color:
     - '#3B407C'
     - '#547AB1'
     - '#CEAFC0'
-  brandStrength: 0.23016160167753696
-  lightness: 0.16149114863947034
-  saturation: 0.9508209901396185
-  rhythmicContrast: 0.5760526966769248
+  brandStrength: 0.8125
+  lightness: 0.4375
+  saturation: 0.5625
+  rhythmicContrast: 0.25
 purpose: []
