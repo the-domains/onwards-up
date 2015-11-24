@@ -3,11 +3,11 @@ inFeed: true
 hasPage: true
 inNav: false
 inLanguage: null
-starred: false
+starred: true
 keywords: []
 description: Be the Product Manager teams need and want.
-datePublished: '2015-11-24T16:56:20.495Z'
-dateModified: '2015-11-24T16:56:00.399Z'
+datePublished: '2015-11-24T18:01:41.623Z'
+dateModified: '2015-11-24T18:01:33.942Z'
 title: Forget what you want. Be the Product Manager your team needs.
 author: []
 authors: []
