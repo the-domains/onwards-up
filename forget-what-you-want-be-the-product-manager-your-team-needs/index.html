@@ -1,4 +1,4 @@
-<!DOCTYPE HTML><html class="exporting wf-loading"><head><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/><title>Forget what you want. Be the Product Manager your team needs. - Onwards Up</title><link href="../rss.xml" title="Onwards Up feed" rel="alternate" type="application/rss+xml"/><meta name="generator" content="The Grid taylor/0.16.25"><meta name="the-grid-solution" content="33da8b1b-4f44-4d79-b27c-36805c67741d"><style href="./css/scale/mini.css" media="(max-width: 19.9376em)" rel="stylesheet">@media (max-width: 15.625em){html{font-size:3.09375em !important}}
+<!DOCTYPE HTML><html class="exporting wf-loading"><head><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/><title>Forget what you want. Be the Product Manager your team needs. - Onwards Up</title><link href="../rss.xml" title="Onwards Up feed" rel="alternate" type="application/rss+xml"/><meta name="generator" content="The Grid taylor/0.17.3"><meta name="the-grid-solution" content="0ba76e35-bb57-4695-9c29-29645bd3b020"><style href="./css/scale/mini.css" media="(max-width: 19.9376em)" rel="stylesheet">@media (max-width: 15.625em){html{font-size:3.09375em !important}}
 @media (min-width: 15.6875em)and (max-width: 15.75em){	html{font-size:3.28125em !important}}
 @media (min-width: 15.8125em)and (max-width: 16.25em){	html{font-size:3.375em !important}}
 @media (min-width: 16.3125em)and (max-width: 16.6875em){html{font-size:3.46875em !important}}
@@ -202,6 +202,14 @@ body {
 }
 .stack {
   z-index: 1;
+  transition: transform 0.3s ease-out;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+}
+.group,
+.aside,
+.decoration {
+  transition: transform 0.3s ease-out;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
 }
 picture {
   display: inline-block;
@@ -250,6 +258,9 @@ a:active {
   transition: color 0.1s ease-in, background-color 0.1s ease-out;
   -webkit-transition: color 0.1s ease-in, background-color 0.1s ease-out;
 }
+a.aside {
+  display: inline-block;
+}
 html.exporting a {
   transition: none;
 }
@@ -259,11 +270,21 @@ html.exporting a {
 .media > a {
   display: inline-block;
 }
+.media iframe {
+  transition: 0.3s opacity ease-in;
+  -webkit-transition: 0.3s opacity ease-in;
+}
 h1 a,
 h2 a,
 h3 a {
   font-weight: inherit;
   letter-spacing: inherit;
+}
+a {
+  -webkit-box-decoration-break: clone;
+  -ms-box-decoration-break: clone;
+  -moz-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 .text-decoration {
   -webkit-box-decoration-break: clone;
@@ -277,36 +298,50 @@ h3 a {
   margin-left: 1.5em;
 }
 .decoration {
-  position: relative;
   pointer-events: none;
+}
+.svg {
+  position: relative;
   background-color: currentColor;
 }
-.decoration > svg {
+.svg > svg {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.decoration.connector > svg {
+.svg.connector > svg {
   width: 109%;
   height: 109%;
   margin-left: -2%;
 }
-.decoration path,
-.decoration ellipse,
-.decoration rect,
-.decoration polygon,
-.decoration circle {
+.svg path,
+.svg ellipse,
+.svg rect,
+.svg polygon,
+.svg circle {
   fill: currentColor;
 }
-.decoration mpath,
-.decoration line,
-.decoration polyline {
+.svg mpath,
+.svg line,
+.svg polyline {
   stroke: currentColor;
 }
-.svg.decoration {
+.svg {
   background-color: transparent;
+}
+.revealed .play.svg:after {
+  display: block;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  margin-top: -20px;
+  margin-left: -20px;
+  background-color: currentColor;
+  content: "";
 }
 .colors-style-aside-border .publisher,
 .colors-style-aside-border .author {
@@ -1203,7 +1238,7 @@ wbr.w1800{ display: block }
  #u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-desktop-l-one-3 {
 display: none;
 }
-}</style></head><body><div class="layout-system rust mobile" id="page-866c70fa-1338-44a5-8a8e-8ae2ff11a79b"><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i first_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-mobile-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout header layout one" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-mobile-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="article" diff_index="0" index="one" class="layout one i w_headline w_title w_paragraph w_text w_separator w_decoration w_leader w_medium_headline w_medium_title w_long_paragraph w_long_text w_subtitle w_short_subtitle w_short_title w_short_paragraph w_short_text layout one" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-mobile-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_texts colors-use-same-as-previous layout one i first_layout last_layout article layout one" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-mobile-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i last_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-mobile-l-one-3"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout footer layout one" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-mobile-l-one-3-l-one"></div><style id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-color">body{background-color: rgba(201, 201, 201, 1)}</style></section><article subject="panel" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_center uninverted vertical collapsed full line_padding_aside_inside text_width_full group_h_align_none text_align_center flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_small panel stack heading i first_panel last_panel w_headline w_title w_decoration w_short_headline w_short_title stack heading" itemid="u-page-nav" itemtype="nav" diff_index="2" index="heading" kind="stack" score="1.875" missed="0.125" tag="article" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-nav"><div kind="group" index="heading" class="group heading group heading" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-nav-g-heading"><h1 kind="title" index="headline" class="short short_headline short_title title headline vfld-leader vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-nav-g-heading-t-headline"><a class="text-decoration" href="../index.html" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-nav-g-heading-t-headline-a">Onwards Up</a></h1></div></article><article subject="chapter" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_large chapter stack textual i first_chapter w_headline w_title w_paragraph w_text w_separator w_decoration w_medium_headline w_medium_title w_long_paragraph w_long_text stack textual" itemid="17c839ea-5db3-4bd4-a2d1-ca3cbeb46948" itemtype="text" diff_index="4" index="textual" kind="stack" score="5.625" missed="0.375" tag="article" id="u-17c839ea-5db3-4bd4-a2d1-ca3cbeb46948"><div kind="group" index="textual" class="group textual group textual" id="u-17c839ea-5db3-4bd4-a2d1-ca3cbeb46948-g-textual"><h1 kind="title" index="headline" class="medium medium_headline medium_title title headline vfld-leader title headline" specificity="0.25" itemprop="title" id="u-17c839ea-5db3-4bd4-a2d1-ca3cbeb46948-g-textual-t-headline"><span class="text-decoration" id="u-17c839ea-5db3-4bd4-a2d1-ca3cbeb46948-g-textual-t-headline-span">Forget what you <wbr class="w480 w960"></wbr>want. Be <wbr class="w481 w961 w1799"></wbr>the <wbr class="w480 w960 w1800"></wbr>Product Manager <wbr class="w480 w960"></wbr>your <wbr class="w481 w961 w1799"></wbr>team needs.</span></h1><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-17c839ea-5db3-4bd4-a2d1-ca3cbeb46948-g-textual-t-paragraph"><p><span class="first-letter">C</span>ompany to company, you will find different <wbr class="w480 w960"></wbr>definitions of Product <wbr class="w481"></wbr>Management. <wbr class="w961 w1799"></wbr>And if you&#x2019;re <wbr class="w480 w960"></wbr>in a <wbr class="w1800"></wbr>big company, organizations within will have <wbr class="w481"></wbr>a <wbr class="w480 w960"></wbr>differing <wbr class="w961 w1799"></wbr>responsibilities for the role. But it&#x2019;s <wbr class="w1800"></wbr>up <wbr class="w480 w960"></wbr>to you, once you arrive <wbr class="w481"></wbr>within your <wbr class="w961 w1799"></wbr>product team, to <wbr class="w480 w960"></wbr>be the Product Manager they need.</p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>F</span>irst thing first, identify your team needs and<em>align <wbr class="w480 w960"></wbr>them to your strengths</em>, <wbr class="w481"></wbr>look <wbr class="w961 w1799"></wbr>to<em>delegate your <wbr class="w480 w960 w1800"></wbr>weaknesses</em>. Understand how you can deliver the most <wbr class="w480 w960"></wbr>bang <wbr class="w481"></wbr>for buck <wbr class="w961 w1799"></wbr>with your time and drive team goals <wbr class="w480 w960 w1800"></wbr>forward.</p></div><div kind="decoration" index="separator" class="decoration separator decoration separator" id="u-17c839ea-5db3-4bd4-a2d1-ca3cbeb46948-g-textual-d-separator"></div></div></article><article subject="chapter" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_article chapter stack textual i w_subtitle w_title w_paragraph w_text w_separator w_decoration w_short_subtitle w_short_title w_long_paragraph w_long_text stack textual" itemid="a437d935-8cad-4ac6-9352-8d368d585e13" itemtype="text" diff_index="4" index="textual" kind="stack" score="5.625" missed="0.375" tag="article" id="u-a437d935-8cad-4ac6-9352-8d368d585e13"><div kind="group" index="textual" class="group textual group textual" id="u-a437d935-8cad-4ac6-9352-8d368d585e13-g-textual"><h2 kind="title" index="subtitle" class="short short_subtitle short_title title subtitle vfld-leader title subtitle" specificity="0.25" itemprop="subtitle" id="u-a437d935-8cad-4ac6-9352-8d368d585e13-g-textual-t-subtitle"><span class="text-decoration" id="u-a437d935-8cad-4ac6-9352-8d368d585e13-g-textual-t-subtitle-span">Strength</span></h2><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-a437d935-8cad-4ac6-9352-8d368d585e13-g-textual-t-paragraph"><p><span class="first-letter">F</span>ocus your attention on the largest gaps of the team <wbr class="w480 w960"></wbr>that align with your <wbr class="w481 w961 w1799"></wbr>strengths. You won&#x2019;t always <wbr class="w480 w1800"></wbr>have <wbr class="w960"></wbr>a project manager, marketing manager, <wbr class="w481"></wbr>business <wbr class="w480 w960 w961 w1799"></wbr>analyst, data scientist, etc. This is your chance <wbr class="w1800"></wbr>to <wbr class="w480 w960"></wbr>step up and <wbr class="w481"></wbr>shine, to <wbr class="w961 w1799"></wbr>complement your core Product <wbr class="w480 w960"></wbr>Management toolset and <wbr class="w481"></wbr>responsibilities. It <wbr class="w1800"></wbr>will be <wbr class="w480 w960 w961 w1799"></wbr>immediately recognized and appreciated.</p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>W</span>hat happens when your product team has strength <wbr class="w480"></wbr>that <wbr class="w960"></wbr>matches yours? Double <wbr class="w481"></wbr>down <wbr class="w961 w1799"></wbr>through leadership <wbr class="w480 w1800"></wbr>and <wbr class="w960"></wbr>empower the team to deliver. Provide a base <wbr class="w480 w481"></wbr>foundation <wbr class="w960 w961 w1799"></wbr>with expectations of the work, check in <wbr class="w480 w1800"></wbr>lightly <wbr class="w960"></wbr>(course correct <wbr class="w481"></wbr>where needed), <wbr class="w961 w1799"></wbr>and let your <wbr class="w480"></wbr>team amaze <wbr class="w960"></wbr>you and your customers.</p></div><div kind="decoration" index="separator" class="decoration separator decoration separator" id="u-a437d935-8cad-4ac6-9352-8d368d585e13-g-textual-d-separator"></div></div></article><article subject="chapter" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_article chapter stack textual i w_subtitle w_title w_paragraph w_text w_separator w_decoration w_short_subtitle w_short_title w_long_paragraph w_long_text stack textual" itemid="664b208f-dede-4899-a151-0f44cea49e7b" itemtype="text" diff_index="4" index="textual" kind="stack" score="5.625" missed="0.375" tag="article" id="u-664b208f-dede-4899-a151-0f44cea49e7b"><div kind="group" index="textual" class="group textual group textual" id="u-664b208f-dede-4899-a151-0f44cea49e7b-g-textual"><h2 kind="title" index="subtitle" class="short short_subtitle short_title title subtitle vfld-leader title subtitle" specificity="0.25" itemprop="subtitle" id="u-664b208f-dede-4899-a151-0f44cea49e7b-g-textual-t-subtitle"><span class="text-decoration" id="u-664b208f-dede-4899-a151-0f44cea49e7b-g-textual-t-subtitle-span">Weakness</span></h2><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-664b208f-dede-4899-a151-0f44cea49e7b-g-textual-t-paragraph"><p><span class="first-letter">T</span>his is a great opportunity to network and most <wbr class="w480 w960"></wbr>importantly,<strong>learn</strong>. Network, <wbr class="w481 w961 w1799"></wbr>identify, and partner up <wbr class="w480 w960 w1800"></wbr>with those who are willing and have bandwidth to <wbr class="w480"></wbr>help <wbr class="w481 w960 w961 w1799"></wbr>your team. You&#x2019;ll be amazed at how<em>willing</em>people <wbr class="w480 w1800"></wbr>are. <wbr class="w960"></wbr>Sell the vision and the <wbr class="w481"></wbr>work <wbr class="w961 w1799"></wbr>(if you&#x2019;re a PM, <wbr class="w480"></wbr>you <wbr class="w960"></wbr>should be good at this) so others can easily <wbr class="w480 w481 w960 w1800"></wbr>understand the <wbr class="w961 w1799"></wbr>mutual benefits.</p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>O</span>nce you start working together, take the time to <wbr class="w480 w960"></wbr>learn the trade you&#x2019;re <wbr class="w481"></wbr>lacking. <wbr class="w961 w1799"></wbr>I&#x2019;ve learned a <wbr class="w1800"></wbr>great <wbr class="w480 w960"></wbr>deal about copy from my time at AOL. I had <wbr class="w480 w481 w960"></wbr>mentors/partners <wbr class="w961 w1799"></wbr>and was exposed to copy that <wbr class="w480 w960 w1800"></wbr>converts, editorial that <wbr class="w481"></wbr>engages, and headlines of <wbr class="w480 w961 w1799"></wbr>the <wbr class="w960"></wbr>most trafficked websites in the world <wbr class="w1800"></wbr>(Engadget, <wbr class="w480 w481 w960"></wbr>TechCrunch, <a href="http://AOL.com">AOL.com</a>, <wbr class="w961 w1799"></wbr>HuffPo). It helped that <a data-grid-id="5d0db7f2-933f-4934-9d29-d696ddee432e" href="http://advertising.aol.com/" data-href="http://advertising.aol.com/">AOL <strong data-grid-id="54f6190f-e7f6-4b95-bc51-ea63bc602a9f"><wbr class="w480"></wbr>knows </strong><wbr class="w960"></wbr>Advertising</a>. I also <wbr class="w481"></wbr>thank <a data-grid-id="b56b05b1-14d4-4c6b-97f1-a059adf7dccf" href="http://www.imdb.com/title/tt0804503/" data-href="http://www.imdb.com/title/tt0804503/">Mad Men</a> <wbr class="w1800"></wbr>and Neville <wbr class="w480 w960 w961 w1799"></wbr>Medhora&#x2019;s book, <a data-grid-id="55e02f2c-3e8c-4808-a36d-d433ba8d8aa3" href="http://www.amazon.com/gp/product/B00F209U6S/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00F209U6S&linkCode=as2&tag=onwup-20&linkId=SB5WVM4DRVOOG7UD" data-href="http://www.amazon.com/gp/product/B00F209U6S/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00F209U6S&linkCode=as2&tag=onwup-20&linkId=SB5WVM4DRVOOG7UD">This book will teach you how to <wbr class="w480 w481"></wbr>write <wbr class="w960"></wbr>better</a> (a cheap/quick/easy <wbr class="w961 w1799"></wbr>read). <wbr class="w1800"></wbr>I&#x2019;ve since <wbr class="w480 w960"></wbr>contributed copy as a <wbr class="w481"></wbr>Product Manager for AOL, <wbr class="w480"></wbr>Zappos, <wbr class="w960"></wbr>Capital <wbr class="w961 w1799"></wbr>One and helped many others.</p></div><div kind="decoration" index="separator" class="decoration separator decoration separator" id="u-664b208f-dede-4899-a151-0f44cea49e7b-g-textual-d-separator"></div></div></article><article subject="chapter" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_article chapter stack column i w_paragraph w_text w_short_paragraph w_short_text stack column" itemid="883ba9a4-da36-401a-b9cb-feb4b0f2ae2f" itemtype="text" diff_index="1" index="column" kind="stack" score="2.625" missed="0.375" tag="article" id="u-883ba9a4-da36-401a-b9cb-feb4b0f2ae2f"><div kind="group" index="column" class="group column group column" id="u-883ba9a4-da36-401a-b9cb-feb4b0f2ae2f-g-column"><div kind="text" index="paragraph" class="text-decoration short short_paragraph short_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-883ba9a4-da36-401a-b9cb-feb4b0f2ae2f-g-column-t-paragraph"><p><span class="first-letter">W</span>hen partnering is not possible, learn by doing or <wbr class="w480"></wbr>see <wbr class="w960"></wbr>how you can get <wbr class="w481"></wbr>external <wbr class="w961 w1799"></wbr>resources while you <wbr class="w480 w1800"></wbr>sharpen <wbr class="w960"></wbr>and add to your toolset. As you expand <wbr class="w481"></wbr>the <wbr class="w480"></wbr>ways you <wbr class="w960 w961 w1799"></wbr>can contribute, so do your options.</p></div></div></article><article subject="chapter" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_article chapter stack textual i last_chapter w_subtitle w_title w_paragraph w_text w_separator w_decoration w_short_subtitle w_short_title w_short_paragraph w_short_text stack textual" itemid="4e56b74a-b8cd-49b6-8538-eee8347fca32" itemtype="text" diff_index="4" index="textual" kind="stack" score="5.625" missed="0.375" tag="article" id="u-4e56b74a-b8cd-49b6-8538-eee8347fca32"><div kind="group" index="textual" class="group textual group textual" id="u-4e56b74a-b8cd-49b6-8538-eee8347fca32-g-textual"><h2 kind="title" index="subtitle" class="short short_subtitle short_title title subtitle vfld-leader title subtitle" specificity="0.25" itemprop="subtitle" id="u-4e56b74a-b8cd-49b6-8538-eee8347fca32-g-textual-t-subtitle"><span class="text-decoration" id="u-4e56b74a-b8cd-49b6-8538-eee8347fca32-g-textual-t-subtitle-span">Need + Want</span></h2><div kind="text" index="paragraph" class="text-decoration short short_paragraph short_text text paragraph vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-4e56b74a-b8cd-49b6-8538-eee8347fca32-g-textual-t-paragraph"><p><span class="first-letter">I</span>f you can fill the needs of your team, word will <wbr class="w480 w960"></wbr>spread, and you will be the <wbr class="w481 w961 w1799"></wbr>Product Manager that <wbr class="w480 w1800"></wbr>teams <em><wbr class="w960"></wbr>want</em>.</p></div><div kind="decoration" index="separator" class="decoration separator decoration separator" id="u-4e56b74a-b8cd-49b6-8538-eee8347fca32-g-textual-d-separator"></div></div></article><article subject="panel" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_center uninverted vertical collapsed full line_padding_aside_inside text_width_full group_h_align_none text_align_center flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_small panel stack heading i first_panel last_panel w_headline w_title w_decoration w_short_headline w_short_title stack heading" itemid="u-page-alternate" itemtype="alternate" diff_index="2" index="heading" kind="stack" score="1.875" missed="0.125" tag="article" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-alternate"><div kind="group" index="heading" class="group heading group heading" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-alternate-g-heading"><h1 kind="title" index="headline" class="short short_headline short_title title headline vfld-leader vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-alternate-g-heading-t-headline"><a class="text-decoration" href="../rss.xml" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-alternate-g-heading-t-headline-a">Onwards Up feed</a></h1></div></article><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i first_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-desktop-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout header layout one" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-desktop-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="article" diff_index="0" index="one" class="layout one i w_headline w_title w_paragraph w_text w_separator w_decoration w_leader w_medium_headline w_medium_title w_long_paragraph w_long_text w_subtitle w_short_subtitle w_short_title w_short_paragraph w_short_text layout one" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-desktop-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_texts colors-use-same-as-previous layout one i first_layout last_layout article layout one" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-desktop-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i last_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-desktop-l-one-3"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout footer layout one" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-desktop-l-one-3-l-one"></div><style id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-color">body{background-color: rgba(201, 201, 201, 1)}</style></section><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i first_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-cinema-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout header layout one" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-cinema-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="article" diff_index="0" index="one" class="layout one i w_headline w_title w_paragraph w_text w_separator w_decoration w_leader w_medium_headline w_medium_title w_long_paragraph w_long_text w_subtitle w_short_subtitle w_short_title w_short_paragraph w_short_text layout one" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-cinema-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_texts colors-use-same-as-previous layout one i first_layout last_layout article layout one" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-cinema-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i last_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-cinema-l-one-3"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout footer layout one" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-cinema-l-one-3-l-one"></div><style id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-color">body{background-color: rgba(201, 201, 201, 1)}</style></section></div><script href="./client.js">(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+}</style></head><body><div class="layout-system rust mobile" id="page-866c70fa-1338-44a5-8a8e-8ae2ff11a79b"><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i first_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-mobile-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout header layout one" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-mobile-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="article" diff_index="0" index="one" class="layout one i w_headline w_title w_paragraph w_text w_separator w_decoration w_leader w_medium_headline w_medium_title w_long_paragraph w_long_text w_subtitle w_short_subtitle w_short_title w_short_paragraph w_short_text layout one" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-mobile-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_texts colors-use-same-as-previous layout one i first_layout last_layout article layout one" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-mobile-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i last_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-mobile-l-one-3"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout footer layout one" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-mobile-l-one-3-l-one"></div><style id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-color">body{background-color: rgba(201, 201, 201, 1)}</style></section><article subject="panel" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_center uninverted vertical collapsed full line_padding_aside_inside text_width_full group_h_align_none text_align_center flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_small panel stack heading i first_panel last_panel w_headline w_title w_decoration w_short_headline w_short_title stack heading" itemid="u-page-nav" itemtype="nav" diff_index="2" index="heading" kind="stack" score="1.875" missed="0.125" tag="article" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-nav"><div kind="group" index="heading" class="group heading group heading" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-nav-g-heading"><h1 kind="title" index="headline" class="short short_headline short_title title headline vfld-leader vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-nav-g-heading-t-headline"><a class="text-decoration" href="../index.html" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-nav-g-heading-t-headline-a">Onwards Up</a></h1></div></article><article subject="chapter" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_large chapter stack textual i first_chapter w_headline w_title w_paragraph w_text w_separator w_decoration w_medium_headline w_medium_title w_long_paragraph w_long_text stack textual" itemid="17c839ea-5db3-4bd4-a2d1-ca3cbeb46948" itemtype="text" diff_index="4" index="textual" kind="stack" score="1.625" missed="0.375" tag="article" id="u-17c839ea-5db3-4bd4-a2d1-ca3cbeb46948"><div kind="group" index="textual" class="group textual group textual" id="u-17c839ea-5db3-4bd4-a2d1-ca3cbeb46948-g-textual"><h1 kind="title" index="headline" class="medium medium_headline medium_title title headline vfld-leader title headline" specificity="0.25" itemprop="title" id="u-17c839ea-5db3-4bd4-a2d1-ca3cbeb46948-g-textual-t-headline"><span class="text-decoration" id="u-17c839ea-5db3-4bd4-a2d1-ca3cbeb46948-g-textual-t-headline-span">Forget what you <wbr class="w480 w960"></wbr>want. Be <wbr class="w481 w961 w1799"></wbr>the <wbr class="w480 w960 w1800"></wbr>Product Manager <wbr class="w480 w960"></wbr>your <wbr class="w481 w961 w1799"></wbr>team needs.</span></h1><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-17c839ea-5db3-4bd4-a2d1-ca3cbeb46948-g-textual-t-paragraph"><p><span class="first-letter">C</span>ompany to company, you will find different <wbr class="w480 w960"></wbr>definitions of Product <wbr class="w481"></wbr>Management. <wbr class="w961 w1799"></wbr>And if you&#x2019;re <wbr class="w480 w960"></wbr>in a <wbr class="w1800"></wbr>big company, organizations within will have <wbr class="w481"></wbr>a <wbr class="w480 w960"></wbr>differing <wbr class="w961 w1799"></wbr>responsibilities for the role. But it&#x2019;s <wbr class="w1800"></wbr>up <wbr class="w480 w960"></wbr>to you, once you arrive <wbr class="w481"></wbr>within your <wbr class="w961 w1799"></wbr>product team, to <wbr class="w480 w960"></wbr>be the Product Manager they need.</p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>F</span>irst thing first, identify your team needs and<em>align <wbr class="w480 w960"></wbr>them to your strengths</em>, <wbr class="w481"></wbr>look <wbr class="w961 w1799"></wbr>to<em>delegate your <wbr class="w480 w960 w1800"></wbr>weaknesses</em>. Understand how you can deliver the most <wbr class="w480 w960"></wbr>bang <wbr class="w481"></wbr>for buck <wbr class="w961 w1799"></wbr>with your time and drive team goals <wbr class="w480 w960 w1800"></wbr>forward.</p></div><div kind="decoration" index="separator" class="decoration separator decoration separator" id="u-17c839ea-5db3-4bd4-a2d1-ca3cbeb46948-g-textual-d-separator"></div></div></article><article subject="chapter" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_article chapter stack textual i w_subtitle w_title w_paragraph w_text w_separator w_decoration w_short_subtitle w_short_title w_long_paragraph w_long_text stack textual" itemid="a437d935-8cad-4ac6-9352-8d368d585e13" itemtype="text" diff_index="4" index="textual" kind="stack" score="1.625" missed="0.375" tag="article" id="u-a437d935-8cad-4ac6-9352-8d368d585e13"><div kind="group" index="textual" class="group textual group textual" id="u-a437d935-8cad-4ac6-9352-8d368d585e13-g-textual"><h2 kind="title" index="subtitle" class="short short_subtitle short_title title subtitle vfld-leader title subtitle" specificity="0.25" itemprop="subtitle" id="u-a437d935-8cad-4ac6-9352-8d368d585e13-g-textual-t-subtitle"><span class="text-decoration" id="u-a437d935-8cad-4ac6-9352-8d368d585e13-g-textual-t-subtitle-span">Strength</span></h2><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-a437d935-8cad-4ac6-9352-8d368d585e13-g-textual-t-paragraph"><p><span class="first-letter">F</span>ocus your attention on the largest gaps of the team <wbr class="w480 w960"></wbr>that align with your <wbr class="w481 w961 w1799"></wbr>strengths. You won&#x2019;t always <wbr class="w480 w1800"></wbr>have <wbr class="w960"></wbr>a project manager, marketing manager, <wbr class="w481"></wbr>business <wbr class="w480 w960 w961 w1799"></wbr>analyst, data scientist, etc. This is your chance <wbr class="w1800"></wbr>to <wbr class="w480 w960"></wbr>step up and <wbr class="w481"></wbr>shine, to <wbr class="w961 w1799"></wbr>complement your core Product <wbr class="w480 w960"></wbr>Management toolset and <wbr class="w481"></wbr>responsibilities. It <wbr class="w1800"></wbr>will be <wbr class="w480 w960 w961 w1799"></wbr>immediately recognized and appreciated.</p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>W</span>hat happens when your product team has strength <wbr class="w480"></wbr>that <wbr class="w960"></wbr>matches yours? Double <wbr class="w481"></wbr>down <wbr class="w961 w1799"></wbr>through leadership <wbr class="w480 w1800"></wbr>and <wbr class="w960"></wbr>empower the team to deliver. Provide a base <wbr class="w480 w481"></wbr>foundation <wbr class="w960 w961 w1799"></wbr>with expectations of the work, check in <wbr class="w480 w1800"></wbr>lightly <wbr class="w960"></wbr>(course correct <wbr class="w481"></wbr>where needed), <wbr class="w961 w1799"></wbr>and let your <wbr class="w480"></wbr>team amaze <wbr class="w960"></wbr>you and your customers.</p></div><div kind="decoration" index="separator" class="decoration separator decoration separator" id="u-a437d935-8cad-4ac6-9352-8d368d585e13-g-textual-d-separator"></div></div></article><article subject="chapter" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_article chapter stack textual i w_subtitle w_title w_paragraph w_text w_separator w_decoration w_short_subtitle w_short_title w_long_paragraph w_long_text stack textual" itemid="664b208f-dede-4899-a151-0f44cea49e7b" itemtype="text" diff_index="4" index="textual" kind="stack" score="1.625" missed="0.375" tag="article" id="u-664b208f-dede-4899-a151-0f44cea49e7b"><div kind="group" index="textual" class="group textual group textual" id="u-664b208f-dede-4899-a151-0f44cea49e7b-g-textual"><h2 kind="title" index="subtitle" class="short short_subtitle short_title title subtitle vfld-leader title subtitle" specificity="0.25" itemprop="subtitle" id="u-664b208f-dede-4899-a151-0f44cea49e7b-g-textual-t-subtitle"><span class="text-decoration" id="u-664b208f-dede-4899-a151-0f44cea49e7b-g-textual-t-subtitle-span">Weakness</span></h2><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-664b208f-dede-4899-a151-0f44cea49e7b-g-textual-t-paragraph"><p><span class="first-letter">T</span>his is a great opportunity to network and most <wbr class="w480 w960"></wbr>importantly,<strong>learn</strong>. Network, <wbr class="w481 w961 w1799"></wbr>identify, and partner up <wbr class="w480 w960 w1800"></wbr>with those who are willing and have bandwidth to <wbr class="w480"></wbr>help <wbr class="w481 w960 w961 w1799"></wbr>your team. You&#x2019;ll be amazed at how<em>willing</em>people <wbr class="w480 w1800"></wbr>are. <wbr class="w960"></wbr>Sell the vision and the <wbr class="w481"></wbr>work <wbr class="w961 w1799"></wbr>(if you&#x2019;re a PM, <wbr class="w480"></wbr>you <wbr class="w960"></wbr>should be good at this) so others can easily <wbr class="w480 w481 w960 w1800"></wbr>understand the <wbr class="w961 w1799"></wbr>mutual benefits.</p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>O</span>nce you start working together, take the time to <wbr class="w480 w960"></wbr>learn the trade you&#x2019;re <wbr class="w481"></wbr>lacking. <wbr class="w961 w1799"></wbr>I&#x2019;ve learned a <wbr class="w1800"></wbr>great <wbr class="w480 w960"></wbr>deal about copy from my time at AOL. I had <wbr class="w480 w481 w960"></wbr>mentors/partners <wbr class="w961 w1799"></wbr>and was exposed to copy that <wbr class="w480 w960 w1800"></wbr>converts, editorial that <wbr class="w481"></wbr>engages, and headlines of <wbr class="w480 w961 w1799"></wbr>the <wbr class="w960"></wbr>most trafficked websites in the world <wbr class="w1800"></wbr>(Engadget, <wbr class="w480 w481 w960"></wbr>TechCrunch, <a href="http://AOL.com">AOL.com</a>, <wbr class="w961 w1799"></wbr>HuffPo). It helped that <a data-grid-id="5d0db7f2-933f-4934-9d29-d696ddee432e" href="http://advertising.aol.com/" data-href="http://advertising.aol.com/">AOL <strong data-grid-id="54f6190f-e7f6-4b95-bc51-ea63bc602a9f"><wbr class="w480"></wbr>knows </strong><wbr class="w960"></wbr>Advertising</a>. I also <wbr class="w481"></wbr>thank <a data-grid-id="b56b05b1-14d4-4c6b-97f1-a059adf7dccf" href="http://www.imdb.com/title/tt0804503/" data-href="http://www.imdb.com/title/tt0804503/">Mad Men</a> <wbr class="w1800"></wbr>and Neville <wbr class="w480 w960 w961 w1799"></wbr>Medhora&#x2019;s book, <a data-grid-id="55e02f2c-3e8c-4808-a36d-d433ba8d8aa3" href="http://www.amazon.com/gp/product/B00F209U6S/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00F209U6S&linkCode=as2&tag=onwup-20&linkId=SB5WVM4DRVOOG7UD" data-href="http://www.amazon.com/gp/product/B00F209U6S/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00F209U6S&linkCode=as2&tag=onwup-20&linkId=SB5WVM4DRVOOG7UD">This book will teach you how to <wbr class="w480 w481"></wbr>write <wbr class="w960"></wbr>better</a> (a cheap/quick/easy <wbr class="w961 w1799"></wbr>read). <wbr class="w1800"></wbr>I&#x2019;ve since <wbr class="w480 w960"></wbr>contributed copy as a <wbr class="w481"></wbr>Product Manager for AOL, <wbr class="w480"></wbr>Zappos, <wbr class="w960"></wbr>Capital <wbr class="w961 w1799"></wbr>One and helped many others.</p></div><div kind="decoration" index="separator" class="decoration separator decoration separator" id="u-664b208f-dede-4899-a151-0f44cea49e7b-g-textual-d-separator"></div></div></article><article subject="chapter" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_article chapter stack column i w_paragraph w_text w_short_paragraph w_short_text stack column" itemid="883ba9a4-da36-401a-b9cb-feb4b0f2ae2f" itemtype="text" diff_index="1" index="column" kind="stack" score="0.625" missed="0.375" tag="article" id="u-883ba9a4-da36-401a-b9cb-feb4b0f2ae2f"><div kind="group" index="column" class="group column group column" id="u-883ba9a4-da36-401a-b9cb-feb4b0f2ae2f-g-column"><div kind="text" index="paragraph" class="text-decoration short short_paragraph short_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-883ba9a4-da36-401a-b9cb-feb4b0f2ae2f-g-column-t-paragraph"><p><span class="first-letter">W</span>hen partnering is not possible, learn by doing or <wbr class="w480"></wbr>see <wbr class="w960"></wbr>how you can get <wbr class="w481"></wbr>external <wbr class="w961 w1799"></wbr>resources while you <wbr class="w480 w1800"></wbr>sharpen <wbr class="w960"></wbr>and add to your toolset. As you expand <wbr class="w481"></wbr>the <wbr class="w480"></wbr>ways you <wbr class="w960 w961 w1799"></wbr>can contribute, so do your options.</p></div></div></article><article subject="chapter" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_article chapter stack textual i last_chapter w_subtitle w_title w_paragraph w_text w_separator w_decoration w_short_subtitle w_short_title w_short_paragraph w_short_text stack textual" itemid="4e56b74a-b8cd-49b6-8538-eee8347fca32" itemtype="text" diff_index="4" index="textual" kind="stack" score="1.625" missed="0.375" tag="article" id="u-4e56b74a-b8cd-49b6-8538-eee8347fca32"><div kind="group" index="textual" class="group textual group textual" id="u-4e56b74a-b8cd-49b6-8538-eee8347fca32-g-textual"><h2 kind="title" index="subtitle" class="short short_subtitle short_title title subtitle vfld-leader title subtitle" specificity="0.25" itemprop="subtitle" id="u-4e56b74a-b8cd-49b6-8538-eee8347fca32-g-textual-t-subtitle"><span class="text-decoration" id="u-4e56b74a-b8cd-49b6-8538-eee8347fca32-g-textual-t-subtitle-span">Need + Want</span></h2><div kind="text" index="paragraph" class="text-decoration short short_paragraph short_text text paragraph vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-4e56b74a-b8cd-49b6-8538-eee8347fca32-g-textual-t-paragraph"><p><span class="first-letter">I</span>f you can fill the needs of your team, word will <wbr class="w480 w960"></wbr>spread, and you will be the <wbr class="w481 w961 w1799"></wbr>Product Manager that <wbr class="w480 w1800"></wbr>teams <em><wbr class="w960"></wbr>want</em>.</p></div><div kind="decoration" index="separator" class="decoration separator decoration separator" id="u-4e56b74a-b8cd-49b6-8538-eee8347fca32-g-textual-d-separator"></div></div></article><article subject="panel" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_center uninverted vertical collapsed full line_padding_aside_inside text_width_full group_h_align_none text_align_center flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_small panel stack heading i first_panel last_panel w_headline w_title w_decoration w_short_headline w_short_title stack heading" itemid="u-page-alternate" itemtype="alternate" diff_index="2" index="heading" kind="stack" score="1.875" missed="0.125" tag="article" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-alternate"><div kind="group" index="heading" class="group heading group heading" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-alternate-g-heading"><h1 kind="title" index="headline" class="short short_headline short_title title headline vfld-leader vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-alternate-g-heading-t-headline"><a class="text-decoration" href="../rss.xml" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-alternate-g-heading-t-headline-a">Onwards Up feed</a></h1></div></article><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i first_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-desktop-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout header layout one" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-desktop-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="article" diff_index="0" index="one" class="layout one i w_headline w_title w_paragraph w_text w_separator w_decoration w_leader w_medium_headline w_medium_title w_long_paragraph w_long_text w_subtitle w_short_subtitle w_short_title w_short_paragraph w_short_text layout one" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-desktop-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_texts colors-use-same-as-previous layout one i first_layout last_layout article layout one" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-desktop-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i last_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-desktop-l-one-3"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout footer layout one" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-desktop-l-one-3-l-one"></div><style id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-color">body{background-color: rgba(201, 201, 201, 1)}</style></section><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i first_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-cinema-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout header layout one" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-cinema-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="article" diff_index="0" index="one" class="layout one i w_headline w_title w_paragraph w_text w_separator w_decoration w_leader w_medium_headline w_medium_title w_long_paragraph w_long_text w_subtitle w_short_subtitle w_short_title w_short_paragraph w_short_text layout one" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-cinema-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_texts colors-use-same-as-previous layout one i first_layout last_layout article layout one" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-cinema-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i last_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-cinema-l-one-3"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout footer layout one" id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-cinema-l-one-3-l-one"></div><style id="u-866c70fa-1338-44a5-8a8e-8ae2ff11a79b-color">body{background-color: rgba(201, 201, 201, 1)}</style></section></div><script href="./client.js">(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 /*! Hammer.JS - v1.1.3 - 2014-05-20
  * http://eightmedia.github.io/hammer.js
  *
@@ -1730,9 +1765,11 @@ global.Hamburger = require('./hamburger');
 
 global.Highlighter = require('./highlighter');
 
+global.Player = require('./player');
+
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./animator":3,"./hamburger":4,"./highlighter":5,"./paginator":7,"hammerjs/hammer.min.js":1,"picturefill/dist/picturefill.min.js":2}],7:[function(require,module,exports){
+},{"./animator":3,"./hamburger":4,"./highlighter":5,"./paginator":7,"./player":8,"hammerjs/hammer.min.js":1,"picturefill/dist/picturefill.min.js":2}],7:[function(require,module,exports){
 var appendPage, mainpage, page, ref, ref1, urls;
 
 page = require('./reflow');
@@ -1833,7 +1870,192 @@ module.exports = function() {
 };
 
 
-},{"./reflow":8}],8:[function(require,module,exports){
+},{"./reflow":9}],8:[function(require,module,exports){
+var Player, Youtube, iframe, revealed, rgb2hex;
+
+iframe = null;
+
+Youtube = null;
+
+Player = function(id, src, width, height, color, bg) {
+  if (src.indexOf('youtube') > -1) {
+    src += '&color=white&theme=light&modestbranding=1';
+  }
+  src = src.replace('COLOR', color).replace('BG', bg);
+  if (location.protocol !== 'https:') {
+    src = src.replace('https:', 'http:');
+  }
+  iframe = document.createElement('iframe');
+  iframe.id = id;
+  iframe.setAttribute('allowfullscreen', '');
+  iframe.src = src;
+  iframe.width = width;
+  iframe.height = height;
+  iframe.style.width = '100%';
+  iframe.style.height = '100%';
+  iframe.style.left = 0;
+  iframe.style.right = 0;
+  iframe.style.position = 'absolute';
+  iframe.style.opacity = 0.2;
+  iframe.onload = function() {
+    return iframe.style.opacity = 1;
+  };
+  return iframe;
+};
+
+revealed = null;
+
+Player.reveal = function(iframe) {
+  var diff, i, left, len, parent, play, ref, ref1, sibling, target, top, translateX, translateY;
+  while (target = (target || iframe).parentNode) {
+    if ((ref = target.classList) != null ? ref.contains('media') : void 0) {
+      if (target.parentNode.classList.contains('group')) {
+        parent = target.parentNode;
+      } else {
+        parent = target;
+      }
+      revealed = iframe;
+      play = parent.getElementsByClassName('play')[0];
+      left = target.offsetWidth - play.offsetLeft - play.offsetWidth;
+      top = -play.offsetTop;
+      play.style.webkitTransformOrigin = 'top right';
+      play.style.webkitTransform = 'translateX(' + left + 'px) translateY(' + top + 'px) scale(0.5)';
+      target.classList.add('revealed');
+      ref1 = parent.parentNode.childNodes;
+      for (i = 0, len = ref1.length; i < len; i++) {
+        sibling = ref1[i];
+        if (sibling.nodeType === 1 && sibling !== parent) {
+          translateX = translateY = null;
+          if ((diff = sibling.offsetLeft + sibling.offsetWidth - parent.offsetLeft) > 2 && parent.offsetLeft >= sibling.offsetLeft) {
+            translateX = -diff;
+          }
+          if ((diff = target.offsetLeft + target.offsetWidth - sibling.offsetLeft) > 2 && parent.offsetLeft <= sibling.offsetLeft) {
+            if (!translateX || Math.abs(diff) < Math.abs(translateX)) {
+              translateX = diff;
+            }
+          }
+          if ((diff = sibling.offsetTop + sibling.offsetHeight - parent.offsetTop) > 2 && parent.offsetTop >= sibling.offsetTop) {
+            translateY = -diff;
+          }
+          if ((diff = target.offsetTop + target.offsetHeight - sibling.offsetTop) > 2 && parent.offsetTop <= sibling.offsetTop) {
+            if (!translateY || Math.abs(diff) < Math.abs(translateY)) {
+              translateY = diff;
+            }
+          }
+          if (Math.abs(translateX) > Math.abs(translateY)) {
+            sibling.style.webkitTransform = 'translateY(' + translateY + 'px)';
+          } else {
+            sibling.style.webkitTransform = 'translateX(' + translateX + 'px)';
+          }
+          console.log(translateX, translateY, sibling);
+        }
+      }
+    }
+  }
+};
+
+Player.hide = function(iframe) {
+  var i, len, parent, play, ref, ref1, sibling;
+  while (parent = (parent || iframe).parentNode) {
+    if ((ref = parent.classList) != null ? ref.contains('revealed') : void 0) {
+      parent.classList.remove('revealed');
+      if (parent.parentNode.classList.contains('group')) {
+        parent = parent.parentNode;
+      }
+      play = parent.getElementsByClassName('play')[0];
+      play.style.webkitTransform = '';
+      ref1 = parent.parentNode.childNodes;
+      for (i = 0, len = ref1.length; i < len; i++) {
+        sibling = ref1[i];
+        sibling.style.webkitTransform = '';
+      }
+    }
+  }
+  return revealed = null;
+};
+
+window.addEventListener('resize', function() {
+  return setTimeout(function() {
+    return requestAnimationFrame(function() {
+      if (revealed) {
+        if (revealed.offsetWidth) {
+          return Player.reveal(revealed);
+        } else {
+          return Player.stop(revealed);
+        }
+      }
+    });
+  }, 10);
+});
+
+Player.stop = function(iframe) {
+  var old;
+  old = iframe;
+  iframe.style.opacity = 0;
+  setTimeout(function() {
+    var ref;
+    return (ref = old.parentNode) != null ? ref.removeChild(old) : void 0;
+  }, 300);
+  Player.hide(iframe);
+  return iframe = null;
+};
+
+document.addEventListener('click', function(e) {
+  var bg, color, header, parent, play, ref, ref1, results, styles, target;
+  target = e.target;
+  results = [];
+  while (target) {
+    if ((ref = target.classList) != null ? ref.contains('media') : void 0) {
+      if (play = target.getElementsByClassName('play')[0]) {
+        if ((iframe != null ? iframe.parentNode : void 0) === target) {
+          Player.stop(iframe);
+        } else {
+          if (iframe) {
+            Player.stop(iframe);
+          }
+          color = bg = null;
+          header = (ref1 = target.parentNode.parentNode.getElementsByClassName('title')[0]) != null ? ref1.firstChild : void 0;
+          parent = header || play;
+          while (parent) {
+            if (parent.nodeType === 1) {
+              styles = window.getComputedStyle(parent);
+              if (styles.color.indexOf('rgba') === -1 || !styles.color.match(/,\s*0\)/)) {
+                if (color == null) {
+                  color = styles.color;
+                }
+              }
+              if (styles['background-color'].indexOf('rgba') === -1 || !styles['background-color'].match(/,\s*0\)/)) {
+                if (bg == null) {
+                  bg = styles['background-color'];
+                }
+              }
+            }
+            parent = parent.parentNode;
+          }
+          iframe = Player(play.id + '-player', play.getAttribute('data-src'), play.getAttribute('data-width'), play.getAttribute('data-height'), rgb2hex(color), rgb2hex(bg));
+          target.appendChild(iframe);
+          Player.reveal(iframe);
+        }
+        e.preventDefault();
+        break;
+      }
+    }
+    results.push(target = target.parentNode);
+  }
+  return results;
+});
+
+rgb2hex = function(rgb) {
+  rgb = rgb.match(/^rgba?[\s+]?\([\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?/i);
+  if (rgb && rgb.length === 4) {
+    return ("0" + parseInt(rgb[1], 10).toString(16)).slice(-2) + ("0" + parseInt(rgb[2], 10).toString(16)).slice(-2) + ("0" + parseInt(rgb[3], 10).toString(16)).slice(-2);
+  }
+};
+
+window.exports = window.Player = Player;
+
+
+},{}],9:[function(require,module,exports){
 module.exports = {
   reflow: function(container) {
     var counter, heights, hidden, hole, holed, holes, i, id, ids, index, j, k, l, last, layout, layouts, len, len1, len2, len3, m, mutations, name, node, ref, ref1, ref2, stack, stacks;
@@ -2098,7 +2320,7 @@ module.exports = function(callback) {
   } else {
     protocol = '';
   }
-  url = protocol + "//cdn.thegrid.io/gss/gss-document/1.2.4/gss.document.parser.js";
+  url = protocol + "//cdn.thegrid.io/gss/gss-document/1.2.8/gss.document.parser.js";
   if (location.toString().indexOf('//localhost:8080') > -1) {
     return module.exports.load(protocol + "//localhost:8080/node_modules/gss-document/dist/gss.document.parser.js", callback, function() {
       return module.exports.load(url, callback);
